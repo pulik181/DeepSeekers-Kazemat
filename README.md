@@ -93,6 +93,10 @@ All code, visual assets, and audio resources in this repository were created in-
 ## 5. Running the Project & Requirements
 
 - **Engine:** Godot Engine **4.7.2 Standard** (GDScript).
+
+## 6. License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 - **Renderer:** `GL Compatibility` (ensures stable performance across desktop GPUs and integrated graphics).
 - **Quick Start on Windows:**
   - Run **`PLAY_GAME.bat`** in the project root to launch the game directly (automatically initializes imported resources on first run if `.godot/` is absent).
