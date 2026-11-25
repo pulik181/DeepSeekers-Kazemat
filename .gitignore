@@ -1,0 +1,16 @@
+# Godot 4+ cache & local editor state
+.godot/
+
+# Build exports & temporary files
+builds/
+*.tmp
+*.bak
+
+# Local secrets & user configuration
+.env
+secrets.cfg
+user_config.json
+
+# Python bytecode
+__pycache__/
+*.pyc

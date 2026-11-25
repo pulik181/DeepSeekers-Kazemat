@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://entities/enemies/dungeon_fiend.gd" id="1_fiend"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fiend"]
+radius = 17.0
+
+[node name="DungeonFiend" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 9
+motion_mode = 1
+script = ExtResource("1_fiend")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -10)
+
+[node name="EyeGlow" type="PointLight2D" parent="."]
+position = Vector2(0, -14)
+color = Color(1, 0.28, 0.38, 1)
+energy = 0.75
+texture_scale = 0.55
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 6)
+shape = SubResource("CircleShape2D_fiend")

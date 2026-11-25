@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://entities/player/inquisitor.gd" id="1_inq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_inq"]
+radius = 18.0
+
+[node name="Inquisitor" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 9
+motion_mode = 1
+script = ExtResource("1_inq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -14)
+
+[node name="AmbientLight" type="PointLight2D" parent="."]
+color = Color(1, 0.78, 0.48, 1)
+energy = 0.95
+texture_scale = 1.9
+
+[node name="LanternPivot" type="Node2D" parent="."]
+
+[node name="BeamLight" type="PointLight2D" parent="LanternPivot"]
+color = Color(1, 0.73, 0.38, 1)
+energy = 1.55
+shadow_enabled = true
+texture_scale = 1.75
+offset = Vector2(165, 0)
+
+[node name="WeaponPivot" type="Node2D" parent="."]
+position = Vector2(0, -8)
+
+[node name="SwordSprite" type="Sprite2D" parent="WeaponPivot"]
+position = Vector2(30, 0)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.06, 1.06)
+position_smoothing_enabled = true
+position_smoothing_speed = 8.5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 10)
+shape = SubResource("CircleShape2D_inq")
