@@ -94,11 +94,13 @@ All code, visual assets, and audio resources in this repository were created in-
 
 - **Engine:** Godot Engine **4.7.2 Standard** (GDScript).
 
-## 6. License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 - **Renderer:** `GL Compatibility` (ensures stable performance across desktop GPUs and integrated graphics).
 - **Quick Start on Windows:**
   - Run **`PLAY_GAME.bat`** in the project root to launch the game directly (automatically initializes imported resources on first run if `.godot/` is absent).
   - Run **`OPEN_EDITOR.bat`** to open the project in the Godot 4.7.2 Editor (press `F5` to play).
   - The project can be exported to a standalone Windows executable (`.exe`) via `Project -> Export` in the Godot Editor.
+
+
+  ## 6. License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
